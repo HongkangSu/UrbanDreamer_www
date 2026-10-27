@@ -1,0 +1,20 @@
+{
+  "ingolstadt_custom": {
+    "agents.csv": "b00c20ba398379020c6fb43ebb07997ceffa2cfad4c0b59158340a1f237222ac",
+    "edge_registry.json": "4de112edce73d10b56c824a44f55a52091c8c19bd2fe4e800c62e35652171db9",
+    "ingolstadt_custom.net.xml": "3cfebb105aa6bc7853f5cd77d4bd2c17da6fead062315dad68e6ff8d2f45e0fc",
+    "od_ingolstadt_custom.txt": "d6a012ab629797032250f4ac026c801439e69f77babec30e97d83575d3e5438b"
+  },
+  "montereau_fault_yonne": {
+    "agents.csv": "59421f908e4373e48524cdec55372768321a447c768ec80b6e4d9ad296d6a0e6",
+    "edge_registry.json": "a70cc06b911d8a6faf4c70cf8917e67b973e83cab08d3b4c9386537089fcb810",
+    "montereau_fault_yonne.net.xml": "8dde6520b77ee8e0cf8d8071464c7578144b7ba2c7cfc3d75a17ec0973d9c3f3",
+    "od_montereau_fault_yonne.txt": "3cc05fae3f1ef181bc6ab7d21449a8c0d2a98688ff4b8dbb56ee6639cf7e86f8"
+  },
+  "coulommiers": {
+    "agents.csv": "c93cbdbe5842bf87e9843e2720965931334be1ac6d73e7c1f8139cdf96112c62",
+    "coulommiers.net.xml": "7e39cc1a64d4a922dedb376a942076280fd0d38c010d70056862630cf37d2436",
+    "edge_registry.json": "55164a123f88f008aaddb91208a37ee20afd638fd5aef7f98cdd2dc27dea0f79",
+    "od_coulommiers.txt": "2aefd4a4dd45d72482cb3cff14bc8e3ea323b30e36ee60771506234268fb9c8c"
+  }
+}

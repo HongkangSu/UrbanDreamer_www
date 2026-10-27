@@ -1,0 +1,107 @@
+# Native mainline with unified experiment budgets. Paths resolve from this configuration.
+
+[inputs]
+network_name = "coulommiers"
+network_dir = "../networks/coulommiers"
+
+[run]
+codec_pretraining_epochs = 10
+output_dir = "../outputs/coulommiers"
+device = "cpu"
+seed = 42
+world_model_initialization_epochs = 5
+online_training_episodes = 1000
+evaluation_episodes = 3
+
+[simulation]
+routing_mode = "current_to_dest"
+traffic_model = "meso"
+meso_junction_control = true
+meso_lane_queue = false
+meso_multi_queue = false
+meso_edge_length_m = 98.0
+meso_interpolate_positions = true
+session_protocol = "event"
+observation_step_seconds = 1.0
+backend = "libsumo"
+demand_duration_seconds = 1800.0
+vehicle_max_speed_mps = 40.0
+world_model_intervals_per_episode = 127
+episode_wall_timeout_seconds = 3600.0
+training_completion_buffer_seconds = 0
+evaluation_horizon_seconds = 3810
+incident_edge = "-152046947#5"
+incident_start_seconds = 1000000.0
+incident_end_seconds = 1001000.0
+incident_speed_mps = 1.0
+sumo_extra_args = ["--collision.action", "warn"]
+
+[resources]
+imagination_passes_per_episode = 1
+imagination_rollouts_per_pass = 2
+imagination_time_budget_seconds = 0.0
+world_model_imagination_precision = "fp32"
+world_model_imagination_compile = false
+world_model_imagination_compile_mode = "default"
+world_model_imagination_space_chunk = 16
+world_model_imagination_time_chunk = 32768
+world_model_imagination_mlp_chunk = 0
+world_model_pretrain_space_chunk = 16
+world_model_pretrain_time_chunk = 32768
+world_model_pretrain_mlp_chunk = 16384
+world_model_pretrain_activation_checkpointing = true
+world_model_initialization_batch_size = 1
+world_model_initialization_sequence_length = 1
+world_model_gradient_accumulation_steps = 32
+online_world_model_batch_size = 4
+
+[data]
+validation_archive_roots = []
+archive_roots = ["../data/offline/coulommiers"]
+cache_episodes = 2
+
+[method]
+actor_objective = "counterfactual_actor_critic_recoverq_v1"
+imagination_actor_epochs = 512
+imagination_horizon_windows = 8
+imagination_seed_scope = "full_episode_v1"
+prior_filter = "soft"
+prior_filter_strength = 0.1
+prior_action_conditioned = false
+prior_filter_input = false
+prior_usage = "condition_only"
+disagreement_samples = 2
+disagreement_weight = 0.0
+fm_solver = "euler"
+fm_steps = 10
+fm_training_mode = "recursive_3step"
+actor_entropy_mode = "annealed"
+actor_entropy_initial_coefficient = 0.002
+actor_entropy_final_coefficient = 0.0001
+actor_entropy_hold_fraction = 0.1
+actor_entropy_end_fraction = 0.8
+transition_volume_scope = "previous_state_excluding_current_births"
+evaluation_demand_seed = 314159
+
+[codec]
+decoder_online_enabled = true
+decoder_online_learning_rate = 1e-05
+decoder_pretrain_enabled = true
+decoder_pretrain_learning_rate = 0.0001
+occupied_speed_weight = 1.0
+slow_speed_weight = 1.0
+slow_speed_mps = 2.0
+slow_min_vehicles = 5.0
+occupied_speed_mae_mps_max = 1.5
+slow_speed_mae_mps_max = 0.5
+slow_validation_min_roads = 1
+learning_rate = 0.0001
+batch_size = 32
+max_updates = 20000
+validation_every = 500
+occupied_vehicle_mae_max = 0.5
+vehicle_mae_max = 0.1
+empty_vehicle_mae_max = 0.05
+total_relative_mae_max = 0.1
+speed_mae_mps_max = 1.5
+speed_positive = true

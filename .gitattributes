@@ -1,0 +1,3 @@
+# Prepared inputs must retain exact bytes for native pretrained input hashes.
+networks/** -text whitespace=-trailing-space,-blank-at-eof,cr-at-eol
+tests/fixtures/** -text whitespace=-trailing-space,-blank-at-eof,cr-at-eol

@@ -1,0 +1,4 @@
+{
+"origins" : ['A_in', 'B_in'],
+"destinations" : ['A_out', 'B_out'],
+}

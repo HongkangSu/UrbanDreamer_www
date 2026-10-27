@@ -1,0 +1,85 @@
+{
+  "sources": {
+    "ingolstadt_custom": {
+      "checkpoint_sha256": "2b92196c64f1a5421b983416dd36fc6a97c7894afb9f298df938a8365ec44db8",
+      "source": {
+        "input_hash": "760ec0e81748feeca47a624667469d2b7a5ac80e8ca2441874f30983c7bfc82e",
+        "config_fingerprint": "add52bcd1a6dee96a29414ebbc91bdfb5e534b11c85dfe7ccf23158d66be3ecf",
+        "input_hashes": {
+          "network_xml": "f7d39bb41e416804c374bd5c4d37e363a0c3bb8c16bc502ec7b09e5c569c2871",
+          "network_agents": "b00c20ba398379020c6fb43ebb07997ceffa2cfad4c0b59158340a1f237222ac",
+          "od_file": "d6a012ab629797032250f4ac026c801439e69f77babec30e97d83575d3e5438b",
+          "edge_registry": "4de112edce73d10b56c824a44f55a52091c8c19bd2fe4e800c62e35652171db9"
+        }
+      },
+      "network_xml_structure_sha256": "c10861ea3bb02c9d992ec12e57e5bf3404abf8fb6d6d2c11ec6e7c0615c32560",
+      "offline_manifest_identity": "38e5a55626e488bbf20957898173cdf83ea7f3948bb7c58b8c18d5a23ffa2a25",
+      "codec_validation_manifest_identity": "bde0dc6a86c6cfa9a74039702f8fda82db7a4b3a227bceaf474470376e262ed1",
+      "offline_summary": {
+        "cache_limit": 2,
+        "cached_episodes": 0,
+        "completed_episodes": 13951,
+        "discovered_files": 25481,
+        "duplicate_files": 0,
+        "events": 1022307806,
+        "imported_episodes": 25215,
+        "truncated_episodes": 11264,
+        "windows": 2677906
+      }
+    },
+    "montereau_fault_yonne": {
+      "checkpoint_sha256": "19866d1d21814640edfc0d36f0b1e9264531b5d7ee22bf5d349ff89b7d815d3b",
+      "source": {
+        "input_hash": "04836deb6d42c4f6b988b5dc238c35a9a45335ddf18090ff6a95500a29c05941",
+        "config_fingerprint": "e7c44d1ffe135bdc5051acf61b9522a20890cb12445fb5664e511735f2b432e2",
+        "input_hashes": {
+          "network_xml": "8dde6520b77ee8e0cf8d8071464c7578144b7ba2c7cfc3d75a17ec0973d9c3f3",
+          "network_agents": "59421f908e4373e48524cdec55372768321a447c768ec80b6e4d9ad296d6a0e6",
+          "od_file": "3cc05fae3f1ef181bc6ab7d21449a8c0d2a98688ff4b8dbb56ee6639cf7e86f8",
+          "edge_registry": "a70cc06b911d8a6faf4c70cf8917e67b973e83cab08d3b4c9386537089fcb810"
+        }
+      },
+      "network_xml_structure_sha256": "187ee3aa54223a124f7b8ac053f822211f3ad476ccbf098cf15b39190da578d8",
+      "offline_manifest_identity": "48a393a96a9ab2e4e59ce4091be98bdb3ca5f7cf5396a49d27a5803ebcea991b",
+      "codec_validation_manifest_identity": "b05dbe53dcccafda4f8468b4786284fcd47b889c3edd632e6f24d9d7675762e8",
+      "offline_summary": {
+        "cache_limit": 2,
+        "cached_episodes": 0,
+        "completed_episodes": 6666,
+        "discovered_files": 23190,
+        "duplicate_files": 0,
+        "events": 1156556180,
+        "imported_episodes": 22933,
+        "truncated_episodes": 16267,
+        "windows": 2733672
+      }
+    },
+    "coulommiers": {
+      "checkpoint_sha256": "b61cfec8b777fdbe04614e787c03c5358bc698598076e8c2af3dd6c61a9298ff",
+      "source": {
+        "input_hash": "8842c1f84d72c70b52259333935ad87c12a2d52ba0786999ec9b50c0ce4c072b",
+        "config_fingerprint": "9daa1b552d7480d296979a4625f842684efba1a0db7a36bb03ae2fc708329ffc",
+        "input_hashes": {
+          "network_xml": "7e39cc1a64d4a922dedb376a942076280fd0d38c010d70056862630cf37d2436",
+          "network_agents": "c93cbdbe5842bf87e9843e2720965931334be1ac6d73e7c1f8139cdf96112c62",
+          "od_file": "2aefd4a4dd45d72482cb3cff14bc8e3ea323b30e36ee60771506234268fb9c8c",
+          "edge_registry": "55164a123f88f008aaddb91208a37ee20afd638fd5aef7f98cdd2dc27dea0f79"
+        }
+      },
+      "network_xml_structure_sha256": "1ec7ed2a56ebecd64fff5d636b1c4e5ac6d2e72f677f9d9b65cf225915f38899",
+      "offline_manifest_identity": "0fbc89df1ca8ad32e2f3e60c6a14e0b3c4ce070c35a5344a2cc7ddc0356d096d",
+      "codec_validation_manifest_identity": "1752280897ac50227f02ff296133f7653214740805b35ae9fde44dbe30888d54",
+      "offline_summary": {
+        "cache_limit": 2,
+        "cached_episodes": 0,
+        "completed_episodes": 978,
+        "discovered_files": 21470,
+        "duplicate_files": 0,
+        "events": 1507486306,
+        "imported_episodes": 21212,
+        "truncated_episodes": 20234,
+        "windows": 2673259
+      }
+    }
+  }
+}
